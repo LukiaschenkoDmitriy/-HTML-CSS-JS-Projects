@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paint</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='script.js'></script>
+</head>
+<body>
+    <canvas id="canvas" width="1900" height="1200"></canvas>
+    <div class="menupaint">
+        <div class="paint instument"><a href="#">Paint</a></div>
+        <div class="drawLine instument"><a href="#" onclick="drawon(false);">Line</a></div>
+    </div>
+    
+    <div class="btn">
+        <button class="return" onclick="window.location.reload(true);">Reload</button>
+        <div class="colors">
+            <button class="colors__red color" onclick="change_color('red');">Red</button>
+            <button class="colors__blue color" onclick="change_color('blue');">Blue</button>
+            <button class="colors__green color" onclick="change_color('green');">Green</button>
+            <button class="colors__black color" onclick="change_color('black');">Black</button>
+            <button class="colors__yellow color" onclick="change_color('yellow');">Yellow</button>
+            
+            <div class="ChangerWieght">
+                <button class="cwidth" onclick="new_widthLine('+')">+</button>
+                <button class="cwidth" onclick="new_widthLine('test')">-</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+body {
+    font-family: 'Open Sans', sans-serif;;
+    margin-top: 300px;
+    text-align: center;
+    color: #fff;
+}
+
+.line:before {
+    max-width: 1900px;
+    width: 400px;
+    height: 400px;
+    background: #000;    
+}
+
+.container {
+    max-width: 1000px;
+    min-width: 500px;;
+    border: 3px solid;
+    margin: auto;
+    border-radius: 33%;
+}
+
+#clock {
+    font-weight: 300;
+    font-size: 120px;
+}
+
+.time_r {
+    color: #fff;
+    margin-bottom: -100px;
+}

@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    height: 100vh;
+    color: #4c4b4b;
+    
+    background: rgb(220,240,240);
+    font-family: 'Prompt', sans-serif;
+}
+
+/*LoginBlock*/
+
+
+#content {
+    width: 630px;
+    height: 470px;
+    background: rgba(255,255,255,0.5);
+    
+    padding-top: 80px;
+    
+    transition: 1s height ease;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+}
+
+.title {
+    width: 700px;;
+    display: flex;
+    text-align: center;
+}
+
+#loginTitle {
+    display: flex;
+    position: absolute;
+    width: 280px;
+    height: 60px;
+    
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    
+    margin-left: -40px;
+    
+    background: rgba(255,255,255,0.5);  
+    box-shadow: 4px 4px #008ef2;
+    transition: 1s all ease;
+}
+
+#loginTitle:hover {
+    cursor: pointer;
+    color: #008ef2;
+    box-shadow: -4px -4px #008ef2,
+        4px 4px #008ef2;
+    transition: 1s all ease;
+}
+
+#registerTitle {
+    display: flex;
+    position: absolute;
+    width: 280px;
+    height: 60px;
+    
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    
+    margin-left: 390px;
+    
+    background: rgba(255,255,255,0.5);
+    box-shadow: -4px 4px #c85500;
+    transition: 1s all ease;
+}
+
+#registerTitle:hover {
+    cursor: pointer;
+    color: #c85500;
+    box-shadow: 4px -4px #c85500,
+        -4px 4px #c85500;
+    transition: 1s all ease;
+}
+
+#registerTitleActive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 380px;
+    height: 60px;
+    background: rgba(255,255,255,0.8);
+    
+    margin-top: 10px;
+    margin-left: 250px;
+    
+    text-align: center;
+    font-size: 22px;
+    
+    border-radius: 0px 15px 0px 0px;
+    border-left: 2px solid #c85500;
+    
+    transition: 1s all ease;
+}
+
+#registerTitleActive:hover {
+    cursor: pointer;
+}
+
+#loginTitleActive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 380px;
+    height: 60px;
+    background: rgba(255,255,255,0.8);
+    
+    margin-top: 10px;
+    
+    text-align: center;
+    font-size: 22px;
+    
+    border-radius: 15px 0px 0px 0px;
+    border-right: 2px solid #008ef2;
+    
+    transition: 1s all ease;
+}
+
+#loginTitleActive:hover {
+    cursor: pointer;
+}
+
+.l_input {
+    display: flex;
+    justify-content: center;
+}
+
+.l_email, .l_password {
+    outline: none;
+    border: none;
+    text-align: center;
+    width: 500px;
+    height: 50px;
+    background: #fff;
+    font-size: 18px;
+    box-shadow: inset -1px -1px 2px -1px;
+    transition: 1s border-radius ease,
+        1s box-shadow ease,
+        1s all ease;
+}
+
+.l_email:hover, .l_password:hover {
+    border-radius: 20px;
+    transition: 1s border-radius ease;
+}
+
+.l_email:focus, .l_password:focus {
+    border-radius: 20px;
+    box-shadow: inset -1px -1px 2px -1px,
+        5px 5px #008ef2;
+    transition: 1s border ease,
+        1s border-radius ease,
+        1s box-shadow ease;
+}
+
+.l_password {
+    margin-top: 50px;
+}
+
+.forgetPassword {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.forgetPassword a {
+    color: #8e8e8e;
+    text-decoration: none;
+    font-size: 18px;
+    transition: .5s color ease;
+}
+
+.forgetPassword a:hover {
+    text-decoration: underline;
+    color: #008ef2;
+    transition: .5s color ease;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.l_submit {
+    border: none;
+    background: #fff;
+    color: #8e8e8e;
+    font-size: 22px;
+    
+    width: 160px;
+    height: 50px;
+    transition: 1s box-shadow ease,
+        1s color ease;
+}
+
+.l_submit:hover {
+    cursor: pointer;
+    box-shadow: 5px -5px #008ef2,
+        -5px 5px #008ef2;
+    color: #008ef2;
+    transition: 1s box-shadow ease,
+        1s color ease;
+}
+
+/*RegisterBlock*/
+#register {
+    display: none;
+}
+
+.r_input {
+    display: flex;
+    justify-content: center;
+}
+
+.r_email,
+.r_password,
+.r_repeat_password,
+.r_name{
+    outline: none;
+    border: none;
+    text-align: center;
+    width: 500px;
+    height: 50px;
+    background: #fff;
+    font-size: 18px;
+    box-shadow: inset -1px -1px 2px -1px;
+    transition: 1s border-radius ease,
+        1s box-shadow ease;
+}
+
+.r_email:hover,
+.r_password:hover,
+.r_repeat_password:hover,
+.r_name:hover {
+    border-radius: 20px;
+    transition: 1s border-radius ease;
+}
+
+.r_email:focus,
+.r_password:focus,
+.r_name:focus,
+.r_repeat_password:focus {
+    border-radius: 20px;
+    box-shadow: inset -0px -0px 0px -0px,
+        5px 5px #e68220;
+    transition: 1s border ease,
+        1s border-radius ease,
+        1s box-shadow ease;
+}
+
+.r_input {
+    margin-top: 30px;
+}
+
+.r_input:first-child {
+    margin-top: 0px;
+}
+
+.r_submit {
+    border: none;
+    background: #fff;
+    color: #8e8e8e;
+    font-size: 22px;
+    
+    width: 160px;
+    height: 50px;
+    transition: 1s box-shadow ease,
+        1s color ease;
+}
+
+.r_submit:hover {
+    cursor: pointer;
+    box-shadow: 5px -5px #e68220,
+        -5px 5px #e68220;
+    color: #e68220;
+    transition: 1s box-shadow ease,
+        1s color ease;
+}

@@ -1,0 +1,18 @@
+#canvas {
+    width: 800px;
+    height: 600px;
+    border: 1px solid black;
+    margin: 40;
+}
+
+.container {
+    display: flex;
+}
+
+.btnContaier {
+    margin-left: 100px;
+}
+
+.wn_containers {
+    padding-top: 20px;
+}

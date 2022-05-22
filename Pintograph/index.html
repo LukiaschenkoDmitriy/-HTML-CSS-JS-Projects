@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paint</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+   <div class="container">
+       <canvas id="canvas" width="800" height="600"></canvas>
+       <div class="btnContaier">
+            <div class="radious_container wn_containers">
+               Radius:
+                <button class="radius_plus" onclick="radius_plus()">+</button>
+                <button class="radius_minus" onclick="radius_minus()">-</button>
+            </div>
+            <div class="mini_radius wn_containers">
+                Min Radius:
+                <button class="minrad_plus" onclick="minrad_plus()">+</button>
+                <button class="minrad_minus" onclick="minrad_minus()">-</button>
+            </div>
+            <div class="speed wn_containers">
+               Speed:
+                <button class="speed_plus" onclick="speed_plus()">+</button>
+                <button class="speed_minus" onclick="speed_minus()">-</button>
+            </div>
+            <div class="color wn_containers">
+               Color:
+                <button class="color_red" onclick="color_red()">Red</button>
+                <button class="color_green()" onclick="color_green()">Green</button>
+                <button class="color_yellow" onclick="color_yellow()">Yellow</button>
+                <button class="color_black" onclick="color_default()">Default</button>
+                <button class="color_blue" onclick="color_blue()">Blue</button>
+                <button class="color_random" onclick="color_random()">Random</button>
+            </div>
+       </div>
+   </div>
+    
+    
+<!--Script-->
+<script src='script.js'></script>
+</body>
+</html>

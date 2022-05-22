@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <div id="loginTitleActive" onclick="pressTitle('login')">Login</div>
+            <div id="registerTitle" onclick="pressTitle('register')">Register</div>
+        </div>
+        <div id="content">
+            <form action="" method="get" id="login">
+                <div class="l_input">
+                    <input type="email" class="l_email" required placeholder="Your email">
+                    </div>
+                <div class="l_input">
+                    <input type="password" required class="l_password" placeholder="Your password">
+                </div>
+                <div class="forgetPassword">
+                    <a href="#">I forget password</a>
+                </div>
+                <div class="button">
+                    <input type="submit" class="l_submit" value="Login">
+                </div>
+            </form>
+            <form action="" method="get" id="register">
+                <div class="r_input">
+                    <input type="text" class="r_name" placeholder="Your name" required>
+                </div>
+                <div class="r_input">
+                    <input type="email" class="r_email" placeholder="Your email" required>
+                </div>
+                <div class="r_input">
+                    <input type="password" class="r_password" placeholder="Your password" required>
+                </div>
+                <div class="r_input">
+                    <input type="password" class="r_repeat_password" placeholder="Repeat password" required>
+                </div>
+                <div class="button">
+                    <input type="submit" class="r_submit" value="Register">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
